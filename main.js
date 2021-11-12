@@ -6,8 +6,14 @@ let min = 1,
 
 
 //UI elements
-const game = document.getElementById('#game'),
+const game = document.querySelector('#game'),
       minNum = document.querySelector('.min-num'),
       maxNum = document.querySelector('.max-num'),
-      minNum = document.querySelector('#guess-input'),
-      minNum = document.querySelector('.message');
+      guessBtn = document.querySelector('#guess-btn'),
+      guessInput = document.querySelector('#guess-input'),
+      message = document.querySelector('.message');
+
+
+//Assign Ui min and max
+minNum.textContent = min;
+maxNum.textContent = max;
