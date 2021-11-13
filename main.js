@@ -36,7 +36,22 @@ if (guess === winningNum){
     //set message
     setMessage(`${winningNum} is correct, YOU WIN!!!`, 'green')
 } else {
+    //wrong number 
+    guessesLeft -= 1;
 
+    if(guessesLeft === 0){
+        //game over -lost
+        //disable input
+    guessInput.disabled = true;
+    //change border color
+    guessInput.style.borderColor ='red';
+    //set message
+    setMessage(`Game over, you lost, The correct answer was ${winningNum}`, 'red');
+
+    } else {
+        // game continues - wrong answer
+        setM
+    }
 
 }
 
