@@ -49,8 +49,12 @@ if (guess === winningNum){
     setMessage(`Game over, you lost, The correct answer was ${winningNum}`, 'red');
 
     } else {
+        // change border color
+        guessInput.style.borderColor = 'red';
+        // clear input
+        guessInput.value = '';
         // game continues - wrong answer
-        setM
+        setMessage(`${guess} is not correct, ${guessesLeft} guesses left`)
     }
 
 }
